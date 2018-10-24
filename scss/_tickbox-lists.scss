@@ -1,0 +1,19 @@
+ul.tickbox-list
+{
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  
+  column-count: 2;
+  
+  &>li
+  {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    
+    list-style: none;
+    font-size: 12pt;
+  }
+}
