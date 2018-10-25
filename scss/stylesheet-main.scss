@@ -1,3 +1,4 @@
+@import "basic-info";
 @import "tickbox-lists";
 
 body
@@ -47,4 +48,89 @@ main
   min-height: calc(80vh - 72pt);
   
   background: cornsilk;
+}
+
+h2.form-heading
+{
+  padding: 0;
+  
+  font:
+  {
+    family: "Times New Roman", serif;
+    size: 18pt;
+    weight: 500;
+  }
+  
+  margin:
+  {
+    top: 0;
+    bottom: 18pt;
+    left: 0;
+    right: 0;
+  }
+}
+
+div.form-group
+{
+  width: 97.5%;
+  
+  margin:
+  {
+    top: 0;
+    bottom: 18pt;
+    left: auto;
+    right: auto;
+  }
+}
+
+legend.form-heading
+{
+  font:
+  {
+    family: "Times New Roman", serif;
+    size: 18pt;
+    weight: 500;
+  }
+  
+  padding:
+  {
+    top: 0;
+    bottom: 0;
+    left: 6pt;
+    right: 6pt;
+  }
+  
+  margin:
+  {
+    top: 0;
+    bottom: 0;
+    left: 12pt;
+    right: 0;
+  }
+}
+
+fieldset
+{
+  border:
+  {
+    color: #000000;
+    style: solid;
+    width: 1px;
+  }
+  
+  padding:
+  {
+    top: 8pt;
+    bottom: 8pt;
+    left: 8pt;
+    right: 8pt;
+  }
+  
+  margin:
+  {
+    top: 0;
+    bottom: 18pt;
+    left: 6pt;
+    right: 6pt;
+  }
 }

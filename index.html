@@ -26,97 +26,108 @@
         Description: foo bar baz qux.
       </p>
       <form id="survey-form">
-        <label for="name" id="name-label"></label>
-        <input type="text" name="name"
-               placeholder="Enter your name here"
-               required autofocus
-               class="basic-info-field" id="name"
-        />
+        <div class="form-group" id="basic-info">
+          <h2 class="form-heading">Basic Information</h2>
+          <label for="name" id="name-label"></label>
+          <input type="text" name="name"
+                 placeholder="Name"
+                 required autofocus
+                 class="basic-info-field" id="name"
+          />
+          
+          <label for="email" id="email-label"></label>
+          <input type="email" name="email"
+                 placeholder="E-mail"
+                 required
+                 class="basic-info-field" id="email"
+          />
+          
+          <label for="age" id="number-label"></label>
+          <input type="number" name="age"
+                 placeholder="Age"
+                 min="1" max="10000"
+                 required
+                 class="basic-info-field" id="number"
+          />
+        </div>
         
-        <label for="email" id="email-label"></label>
-        <input type="email" name="email"
-               placeholder="Enter your E-mail here"
-               required
-               class="basic-info-field" id="email"
-        />
-        
-        <label for="age" id="number-label"></label>
-        <input type="number" name="age"
-               placeholder="Enter your age here"
-               min="1" max="10000"
-               required
-               class="basic-info-field" id="number"
-        />
-        
-        <h2 class="form-heading">What kinds of music are you into?</h2>
-        <ul class="tickbox-list">
-          <li>
-            <label for="classical-orchestral">
-              <input type="checkbox" name="classical-orchestral" />
-              Classical & Orchestral
-            </label>
-          </li>
-          <li>
-            <label for="country-folk">
-              <input type="checkbox" name="country-folk" />
-              Country & Folk
-            </label>
-          </li>
-          <li>
-            <label for="edm-house">
-              <input type="checkbox" name="edm-house" />
-              EDM & House
-            </label>
-          </li>
-          <li>
-            <label for="funk-soul">
-              <input type="checkbox" name="funk-soul" />
-              Funk & Soul
-            </label>
-          </li>
-          <li>
-            <label for="metal">
-              <input type="checkbox" name="metal" />
-              Heavy/Death/Black Metal
-            </label>
-          </li>
-          <li>
-            <label for="hiphop-rap">
-              <input type="checkbox" name="hiphop-rap" />
-              Hip-Hop & Rap
-            </label>
-          </li>
-          <li>
-            <label for="jazz-blues">
-              <input type="checkbox" name="jazz-blues" />
-              Jazz & Blues
-            </label>
-          </li>
-          <li>
-            <label for="pop-rock">
-              <input type="checkbox" name="pop-rock" />
-              Pop & Rock
-            </label>
-          </li>
-          <li>
-            <label for="techno-dubstep">
-              <input type="checkbox" name="techno-dubstep" />
-              Techno & Dubstep
-            </label>
-          </li>
-          <li>
-            <label for="vocaloid-utau">
-              <input type="checkbox" name="vocaloid-utau" />
-              Vocaloid & Utau
-            </label>
-          </li>
-          <li>
-            <label for="other">
-              <input type="checkbox" name="other" />
-              Other
-            </label>
-          </li>
-        </uL>
+        <fieldset>
+          <legend class="form-heading">What kinds of music are you into?</legend>
+          <ul class="tickbox-list">
+            <li>
+              <label for="classical-orchestral">
+                <input type="checkbox" name="classical-orchestral" value="1" />
+                Classical & Orchestral
+              </label>
+            </li>
+            <li>
+              <label for="country-folk">
+                <input type="checkbox" name="country-folk" value="2" />
+                Country & Folk
+              </label>
+            </li>
+            <li>
+              <label for="edm-house">
+                <input type="checkbox" name="edm-house" value="3" />
+                EDM & House
+              </label>
+            </li>
+            <li>
+              <label for="disco">
+                <input type="checkbox" name="disco" value="4" />
+                Disco
+              </label>
+            </li>
+            <li>
+              <label for="funk-soul">
+                <input type="checkbox" name="funk-soul" value="5" />
+                Funk & Soul
+              </label>
+            </li>
+            <li>
+              <label for="metal">
+                <input type="checkbox" name="metal" value="6" />
+                Heavy/Death/Black Metal
+              </label>
+            </li>
+            <li>
+              <label for="hiphop-rap">
+                <input type="checkbox" name="hiphop-rap" value="7" />
+                Hip-Hop & Rap
+              </label>
+            </li>
+            <li>
+              <label for="jazz-blues">
+                <input type="checkbox" name="jazz-blues" value="8" />
+                Jazz & Blues
+              </label>
+            </li>
+            <li>
+              <label for="pop-rock">
+                <input type="checkbox" name="pop-rock" value9 />
+                Pop & Rock
+              </label>
+            </li>
+            <li>
+              <label for="techno-dubstep">
+                <input type="checkbox" name="techno-dubstep" value="10" />
+                Techno & Dubstep
+              </label>
+            </li>
+            <li>
+              <label for="vocaloid-utau">
+                <input type="checkbox" name="vocaloid-utau" value="11" />
+                Vocaloid & Utau
+              </label>
+            </li>
+            <li>
+              <label for="other">
+                <input type="checkbox" name="other" value="12" />
+                Other
+              </label>
+            </li>
+          </uL>
+        </fieldset>
       </form>
     </main>
     
