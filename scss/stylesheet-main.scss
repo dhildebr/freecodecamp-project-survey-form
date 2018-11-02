@@ -1,3 +1,6 @@
+@import "colors";
+@import "html5";
+
 @import "basic-info";
 @import "tickbox-lists";
 
@@ -7,13 +10,12 @@ body
   padding: 0;
   margin: 0;
   
-  background: wheat;
+  background: $color-background;
   font-size: 0;
 }
 
 header
 {
-  display: block;
   border: 0;
   padding: 0;
   margin: 0 auto;
@@ -31,23 +33,44 @@ header
     width: 80%;
     height: 72pt;
     
-    font: 700 36pt "Times New Roman", serif;
     text-align: center;
+    
+    font:
+    {
+      family: "Orbitron", sans-serif;
+      size: 36pt;
+      weight: 700;
+    }
   }
 }
 
 main
 {
-  display: block;
+  box-sizing: border-box;
   border: 0;
-  padding: 0;
-  margin: 0 auto 20vh;
   
   width: 100%;
   max-width: 1600px;
   min-height: calc(80vh - 72pt);
   
-  background: cornsilk;
+  background: $color-foreground;
+  border-radius: 6pt;
+  
+  padding:
+  {
+    top: 12pt;
+    bottom: 12pt;
+    left: 12pt;
+    right: 12pt;
+  }
+  
+  margin:
+  {
+    top: 0;
+    bottom: 20vh;
+    left: auto;
+    right: auto;
+  }
 }
 
 h2.form-heading
@@ -113,7 +136,7 @@ fieldset
 {
   border:
   {
-    color: #000000;
+    color: $color-borders;
     style: solid;
     width: 1px;
   }
