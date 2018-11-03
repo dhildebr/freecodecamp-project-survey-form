@@ -52,4 +52,15 @@ input[type="number"]
   &#name   { width: 200px; }
   &#email  { width: 300px; }
   &#number { width: 50px; }
+  
+  @media only screen and (max-width: 480px)
+  {
+    &#name,
+    &#email,
+    &#number
+    {
+      display: block;
+      margin: 2pt 8pt;
+    }
+  }
 }
