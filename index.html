@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link rel="stylesheet" href="./css/stylesheet-main.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron:700" />
     
   </head>
   
@@ -23,10 +23,13 @@
     </header>
     
     <main>
+      
       <p id="description">
         Description: foo bar baz qux.
       </p>
+      
       <form id="survey-form">
+        
         <div class="form-group" id="basic-info">
           <h2 class="form-heading">Basic Information</h2>
           <label for="name" id="name-label"></label>
@@ -105,7 +108,35 @@
             </li>
           </uL>
         </fieldset>
+        
+        <fieldset>
+          <legend class="form-heading">Which is your preferred gaming device?</legend>
+          <ul class="tickbox-list">
+            <li>
+              <input type="radio" name="gaming-prefs" value="pc" id="gaming-pref-pc" />
+              <label for="gaming-pref-pc">PC Master Race!</label>
+            </li>
+            <li>
+              <input type="radio" name="gaming-prefs" value="console" id="gaming-pref-console" />
+              <label for="gaming-pref-console">Console Wars</label>
+            </li>
+            <li>
+              <input type="radio" name="gaming-prefs" value="handheld" id="gaming-pref-handheld" />
+              <label for="gaming-pref-handheld">Handheld Hegeomony</label>
+            </li>
+            <li>
+              <input type="radio" name="gaming-prefs" value="mobile" id="gaming-pref-mobile" />
+              <label for="gaming-pref-mobile">Phone-Fiddling Peasantry</label>
+            </li>
+            <li>
+              <input type="radio" name="gaming-prefs" value="none" id="gaming-pref-none" />
+              <label for="gaming-pref-none">None</label>
+            </li>
+          </uL>
+        </fieldset>
+        
       </form>
+      
     </main>
     
   </body>
