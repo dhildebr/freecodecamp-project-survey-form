@@ -1,0 +1,37 @@
+@import "colors";
+
+select
+{
+  display: block;
+  
+  width: calc(100% / 3);
+  min-width: 400px;
+  
+  background-color: $color-entry-field-background;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: inset 0 0 2pt $color-entry-field-shadows;
+  
+  font:
+  {
+    family: "Times New Roman", serif;
+    size: 15pt;
+    weight: 400;
+  }
+  
+  padding:
+  {
+    top: 2pt;
+    bottom: 2pt;
+    left: 4pt;
+    right: 4pt;
+  }
+  
+  margin:
+  {
+    top: 0;
+    bottom: 18pt;
+    left: auto;
+    right: auto;
+  }
+}

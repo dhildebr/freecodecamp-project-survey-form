@@ -3,6 +3,8 @@
 
 @import "basic-info";
 @import "tickbox-lists";
+@import "dropdowns";
+@import "textareas";
 
 body
 {
@@ -91,6 +93,44 @@ h2.form-heading
     bottom: 18pt;
     left: 0;
     right: 0;
+  }
+}
+
+label.form-heading
+{
+  display: block;
+  box-sizing: border-box;
+  
+  width: 50%;
+  min-width: 600px;
+  
+  padding:
+  {
+    top: 0;
+    bottom: 0;
+    left: 12pt;
+    right: 12pt;
+  }
+  
+  font:
+  {
+    family: "Times New Roman", serif;
+    size: 18pt;
+    weight: 500;
+  }
+  
+  margin:
+  {
+    top: 0;
+    bottom: 6pt;
+    left: auto;
+    right: auto;
+  }
+  
+  &.narrow
+  {
+    width: calc(100% / 3);
+    min-width: 400px;
   }
 }
 
