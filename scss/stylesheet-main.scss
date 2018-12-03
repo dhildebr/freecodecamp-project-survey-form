@@ -198,3 +198,57 @@ fieldset
     right: 6pt;
   }
 }
+
+button#submit
+{
+  display: block;
+  cursor: pointer;
+  
+  background: #C0C0C0;
+  background: linear-gradient(to bottom, #C0C0C0 50%, #A0A0A0 50%);
+  
+  border: 0;
+  border-radius: 10px;
+  
+  font:
+  {
+    family: "Times New Roman", serif;
+    size: 24pt;
+    weight: 400;
+  }
+  
+  padding:
+  {
+    top: 4pt;
+    bottom: 4pt;
+    left: 8pt;
+    right: 8pt;
+  }
+  
+  margin:
+  {
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: auto;
+  }
+  
+  &:hover,
+  &:focus
+  {
+    background: #D0D0D0;
+    background: linear-gradient(to bottom, #D0D0D0 50%, #B0B0B0 50%);
+    
+    outline: none;
+    &:-moz-focus-inner { border: 0; }
+  }
+  
+  &:active
+  {
+    background: #B0B0B0;
+    background: linear-gradient(to bottom, #B0B0B0 50%, #909090 50%);
+    
+    outline: none;
+    &::-moz-focus-inner { border: 0; }
+  }
+}
