@@ -205,7 +205,7 @@ button#submit
   cursor: pointer;
   
   background: #C0C0C0;
-  background: linear-gradient(to bottom, #C0C0C0 50%, #A0A0A0 50%);
+  background: linear-gradient(to bottom, $color-submit-button-main-top 50%, $color-submit-button-main-bottom 50%);
   
   border: 0;
   border-radius: 10px;
@@ -237,7 +237,7 @@ button#submit
   &:focus
   {
     background: #D0D0D0;
-    background: linear-gradient(to bottom, #D0D0D0 50%, #B0B0B0 50%);
+    background: linear-gradient(to bottom, $color-submit-button-hover-top 50%, $color-submit-button-hover-bottom 50%);
     
     outline: none;
     &:-moz-focus-inner { border: 0; }
@@ -246,7 +246,7 @@ button#submit
   &:active
   {
     background: #B0B0B0;
-    background: linear-gradient(to bottom, #B0B0B0 50%, #909090 50%);
+    background: linear-gradient(to bottom, $color-submit-button-active-top 50%, $color-submit-button-active-bottom 50%);
     
     outline: none;
     &::-moz-focus-inner { border: 0; }
