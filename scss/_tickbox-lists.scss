@@ -16,8 +16,18 @@ ul.tickbox-list
     margin: 0;
     
     list-style: none;
-    font-size: 12pt;
+    
+    &>label
+    {
+      font:
+      {
+        family: "Lora", serif;
+        size: 12pt;
+        weight: 400;
+      }
+    }
   }
+  
   
   @media only screen and (max-width: 480px)
   { column-count: 1; }
